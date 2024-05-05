@@ -340,6 +340,3 @@ def get_furniture_by_id(furni_id):
 @app.route('/')
 def index():
     return render_template('index.html')
-
-if __name__ == "__main__":
-    app.run(debug=True)
