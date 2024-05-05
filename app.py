@@ -81,7 +81,7 @@ def get_furnitures():
 # ================ ML PREFERENCES ========================
 
 # Load the trained model and dataset
-with open('./assets/model.pkl', 'rb') as model_file:
+with open('./static/model.pkl', 'rb') as model_file:
     vectorizer, tags_tfidf_matrix, df = pickle.load(model_file)
     
 # Function for text-preprocessing
@@ -131,7 +131,7 @@ def recommend():
 # ================ SEARCH BAR ========================
 
 # Load the dataset
-df = pd.read_csv("./assets/cleaned_datasets.csv")
+df = pd.read_csv("./static/cleaned_datasets.csv")
 
 # Initialize NLTK and Spacy resources
 nltk.download('punkt')
